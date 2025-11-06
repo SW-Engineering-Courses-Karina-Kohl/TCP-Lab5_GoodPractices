@@ -1,11 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        TaskManager tm = new TaskManager();
-        tm.addTask("Comprar café", "Comprar café para o escritório", "2025-11-10");
-        tm.addTask("Enviar relatório", "Enviar relatório mensal ao gestor", "2025-11-15");
+        TaskManager manager = new TaskManager();
+        manager.addTask("Estudar Java", "Rever conceitos de modularidade", "2025-11-12");
+        manager.addTask("Preparar slides", "Montar material da aula", "2025-11-15");
+        manager.addTask("Comprar café", "Café para o laboratório", "2025-11-10");
 
-        tm.showAll();
-        tm.doTask(0);
-        tm.showAll();
+        manager.showAll();
+
+        System.out.println("\n=== Exportando relatório ===");
+        manager.exportTasksReport("report.txt");
     }
 }
