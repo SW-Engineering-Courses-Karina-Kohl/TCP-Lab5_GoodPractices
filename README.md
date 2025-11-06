@@ -18,9 +18,10 @@ src/
 ├── service/
 │   └── TaskManager.java
 └── util/
-    └── DateUtils.java
+    └── ReportGenerator.java
+    └── FileUtils.java
 ```
-3. Extrair métodos utilitários para `DateUtils`.
+3. Extrair métodos utilitários para o pacote ```util```.
 5. Documentar no README:
    - Convenções aplicadas.
    - Decisões de modularidade.
